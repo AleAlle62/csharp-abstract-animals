@@ -8,11 +8,22 @@ namespace csharp_abstract_animals
 {
     internal class Animali
     {
+        //es 1
         public abstract class Animale
         {
             public abstract void Dormi();
             public abstract void Verso();
             public abstract void Mangia();
+        }
+
+        //es 2
+        public interface IVola
+        {
+            void Vola();
+        }
+        public interface INuota
+        {
+            void Nuota();
         }
 
         //CANE
@@ -53,6 +64,11 @@ namespace csharp_abstract_animals
             {
                 Console.WriteLine("VERMI");
             }
+            //volare
+            public void IVola()
+            {
+                Console.WriteLine("Sto Volando!!!");
+            }
         }
 
         //AQUILA
@@ -73,6 +89,11 @@ namespace csharp_abstract_animals
             {
                 Console.WriteLine("CONIGLI");
             }
+            //volare
+            public void IVola()
+            {
+                Console.WriteLine("Sto Volando!!!");
+            }
         }
 
         //DELFINO
@@ -92,6 +113,11 @@ namespace csharp_abstract_animals
             public override void Mangia()
             {
                 Console.WriteLine("PESCI");
+            }
+            //nuotare
+            public void INuota()
+            {
+                Console.WriteLine("Sto Nuotando!!!");
             }
         }
     }

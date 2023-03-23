@@ -20,6 +20,7 @@ Passerotto Cip = new Passerotto();
 Cip.Dormi();
 Cip.Verso();
 Cip.Mangia();
+Cip.IVola();
 Console.WriteLine("");
 
 
@@ -30,6 +31,7 @@ Aquila Frank = new Aquila();
 Frank.Dormi();
 Frank.Verso();
 Frank.Mangia();
+Frank.IVola();  
 Console.WriteLine("");
 
 
@@ -39,4 +41,8 @@ Delfino Dino = new Delfino();
 Dino.Dormi();
 Dino.Verso();
 Dino.Mangia();
+Dino.INuota();
 Console.WriteLine("");
+
+
+//es 2
