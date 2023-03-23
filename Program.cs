@@ -1,8 +1,8 @@
-﻿// es 1
-
-using System;
+﻿using System;
 using static csharp_abstract_animals.Animali;
 
+
+//es 1
 
 //CANE
 Console.WriteLine("CANE:");
@@ -20,6 +20,8 @@ Passerotto Cip = new Passerotto();
 Cip.Dormi();
 Cip.Verso();
 Cip.Mangia();
+
+//es 2
 Cip.IVola();
 Console.WriteLine("");
 
@@ -31,7 +33,9 @@ Aquila Frank = new Aquila();
 Frank.Dormi();
 Frank.Verso();
 Frank.Mangia();
-Frank.IVola();  
+
+//es 2
+Frank.IVola(); 
 Console.WriteLine("");
 
 
@@ -41,8 +45,9 @@ Delfino Dino = new Delfino();
 Dino.Dormi();
 Dino.Verso();
 Dino.Mangia();
+
+//es 2
 Dino.INuota();
 Console.WriteLine("");
 
 
-//es 2
