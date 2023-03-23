@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +16,13 @@ namespace csharp_abstract_animals
             public abstract void Dormi();
             public abstract void Verso();
             public abstract void Mangia();
-        }
+            //variabili 
+            protected string dormire = "come dorme:";
+            protected string verso = "che verso fa:";
+            protected string mangiare = "cosa mangia:";
+            protected string cosafa = "vola o nuota:";
 
-        //es 2
+        }
         public interface IVola
         {
             void Vola();
@@ -27,22 +33,22 @@ namespace csharp_abstract_animals
         }
 
         //CANE
-        public class Cane : Animale 
+        public class Cane : Animale
         {
             //dormire
             public override void Dormi()
             {
-                Console.WriteLine("ZZZZZZ");
+                Console.WriteLine($"{dormire}ZZZZZZ");
             }
             //verso
             public override void Verso()
             {
-                Console.WriteLine("BAU");
+                Console.WriteLine($"{verso}BAU");
             }
             //cosa mangia
             public override void Mangia()
             {
-                Console.WriteLine("CIBO PER CANI");
+                Console.WriteLine($"{mangiare}CIBO PER CANI");
             }
         }
 
@@ -52,22 +58,22 @@ namespace csharp_abstract_animals
             //dormire
             public override void Dormi()
             {
-                Console.WriteLine("ZZZZZZ");
+                Console.WriteLine($"{dormire}ZZZZZZ");
             }
             //verso
             public override void Verso()
             {
-                Console.WriteLine("CIP");
+                Console.WriteLine($"{verso}CIP");
             }
             //cosa mangia
             public override void Mangia()
             {
-                Console.WriteLine("VERMI");
+                Console.WriteLine($"{mangiare}VERMI");
             }
             //volare
             public void IVola()
             {
-                Console.WriteLine("Sto Volando!!!");
+                Console.WriteLine($"{cosafa}Sto Volando!!!");
             }
         }
 
@@ -77,22 +83,22 @@ namespace csharp_abstract_animals
             //dormire
             public override void Dormi()
             {
-                Console.WriteLine("ZZZZZZ");
+                Console.WriteLine($"{dormire}ZZZZZZ");
             }
             //verso
             public override void Verso()
             {
-                Console.WriteLine("CRA");
+                Console.WriteLine($"{verso}CRA");
             }
             //cosa mangia
             public override void Mangia()
             {
-                Console.WriteLine("CONIGLI");
+                Console.WriteLine($"{mangiare}CONIGLI");
             }
             //volare
             public void IVola()
             {
-                Console.WriteLine("Sto Volando!!!");
+                Console.WriteLine($"{cosafa}Sto Volando!!!");
             }
         }
 
@@ -102,22 +108,22 @@ namespace csharp_abstract_animals
             //dormire
             public override void Dormi()
             {
-                Console.WriteLine("ZZZZZZ");
+                Console.WriteLine($"{dormire}ZZZZZZ");
             }
             //verso
             public override void Verso()
             {
-                Console.WriteLine("SCREEE");
+                Console.WriteLine($"{verso}SCREEE");
             }
             //cosa mangia
             public override void Mangia()
             {
-                Console.WriteLine("PESCI");
+                Console.WriteLine($"{mangiare}PESCI");
             }
             //nuotare
             public void INuota()
             {
-                Console.WriteLine("Sto Nuotando!!!");
+                Console.WriteLine($"{cosafa}Sto Nuotando!!!");
             }
         }
     }

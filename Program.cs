@@ -51,3 +51,4 @@ Dino.INuota();
 Console.WriteLine("");
 
 
+Console.ReadLine();
