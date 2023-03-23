@@ -74,5 +74,25 @@ namespace csharp_abstract_animals
                 Console.WriteLine("CONIGLI");
             }
         }
+
+        //DELFINO
+        public class Delfino : Animale
+        {
+            //dormire
+            public override void Dormi()
+            {
+                Console.WriteLine("ZZZZZZ");
+            }
+            //verso
+            public override void Verso()
+            {
+                Console.WriteLine("SCREEE");
+            }
+            //cosa mangia
+            public override void Mangia()
+            {
+                Console.WriteLine("PESCI");
+            }
+        }
     }
 }
